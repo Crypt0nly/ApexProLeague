@@ -1157,6 +1157,25 @@ table.stat-table td.s-value { text-align: right; font-family: var(--font-display
   border-bottom: 1px solid var(--line);
 }
 .site-footer__about p { color: var(--muted); font-size: 14px; margin-top: 16px; max-width: 320px; }
+
+.socials { display: flex; gap: 10px; margin-top: 22px; }
+.socials a {
+  width: 42px; height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-2);
+  border-radius: 11px;
+  color: var(--muted);
+  background: var(--panel);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.socials a:hover {
+  color: var(--gold);
+  border-color: var(--gold-line);
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+}
+.socials svg { width: 19px; height: 19px; }
 .site-footer h4 {
   font-size: 12px;
   letter-spacing: 0.22em;

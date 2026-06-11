@@ -18,6 +18,18 @@ const DISCORD_ICON = `
   <path d="M20.32 4.37a19.8 19.8 0 0 0-4.93-1.51 13.8 13.8 0 0 0-.64 1.28 18.3 18.3 0 0 0-5.5 0 13.8 13.8 0 0 0-.64-1.28c-1.71.29-3.37.8-4.93 1.51C.6 9.06-.25 13.62.17 18.11a19.9 19.9 0 0 0 6.04 3.03c.49-.66.92-1.37 1.29-2.1a12.9 12.9 0 0 1-2.03-.97c.17-.12.34-.25.5-.38a14.2 14.2 0 0 0 12.06 0c.16.13.33.26.5.38-.65.38-1.33.71-2.04.97.37.73.8 1.44 1.29 2.1a19.8 19.8 0 0 0 6.05-3.03c.5-5.2-.85-9.71-3.51-13.74ZM8.02 15.33c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.17 1.1 2.15 2.42 0 1.34-.94 2.42-2.15 2.42Z"/>
 </svg>`;
 
+const TIKTOK_ICON = `
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1Z"/>
+</svg>`;
+
+const INSTAGRAM_ICON = `
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+  <rect x="3" y="3" width="18" height="18" rx="5"/>
+  <circle cx="12" cy="12" r="4.2"/>
+  <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/>
+</svg>`;
+
 const NAV_LINKS = [
   ["index.html", "Home"],
   ["teams.html", "Teams"],
@@ -76,6 +88,11 @@ function renderShell() {
               <span class="brand__name">Apex <em>Pro League</em></span>
             </a>
             <p>The premier community-run ${CONFIG.game} tournament. ${CONFIG.teamCount} clubs. One champion. Built by players, for players.</p>
+            <div class="socials">
+              <a href="${CONFIG.discordUrl}" target="_blank" rel="noopener" aria-label="Discord">${DISCORD_ICON}</a>
+              <a href="${CONFIG.tiktokUrl}" target="_blank" rel="noopener" aria-label="TikTok">${TIKTOK_ICON}</a>
+              <a href="${CONFIG.instagramUrl}" target="_blank" rel="noopener" aria-label="Instagram">${INSTAGRAM_ICON}</a>
+            </div>
           </div>
           <div>
             <h4>Competition</h4>
@@ -100,7 +117,8 @@ function renderShell() {
             <div class="site-footer__links">
               <a href="${CONFIG.discordUrl}" target="_blank" rel="noopener">Discord Server</a>
               <a href="${CONFIG.discordUrl}" target="_blank" rel="noopener">Register Your Club</a>
-              <a href="${CONFIG.discordUrl}" target="_blank" rel="noopener">Contact Admins</a>
+              <a href="${CONFIG.tiktokUrl}" target="_blank" rel="noopener">TikTok</a>
+              <a href="${CONFIG.instagramUrl}" target="_blank" rel="noopener">Instagram</a>
             </div>
           </div>
         </div>

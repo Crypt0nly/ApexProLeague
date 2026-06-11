@@ -17,6 +17,8 @@ const CONFIG = {
   game: "EA SPORTS FC Pro Clubs",
   platform: "Cross-Play · PS5 / Xbox Series X|S / PC",
   discordUrl: "https://discord.gg/pzbBqu87Tb",
+  tiktokUrl: "https://www.tiktok.com/@apex.proleague",
+  instagramUrl: "https://www.instagram.com/apex.proleague",
   prizePool: "€2,500",
   teamCount: 16,
   // Countdown target + label shown under the timer on the home page.
