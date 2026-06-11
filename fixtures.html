@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixtures &amp; Results — Apex Pro League</title>
+  <meta name="description" content="Full group-stage schedule and results for Apex Pro League Season I." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="fixtures">
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Group Stage</span>
+        <h1>Fixtures &amp; <span class="text-gold">Results</span></h1>
+        <p>Six matchdays, forty-eight group games. Kick-off 20:00 UK / 21:00 CET unless rescheduled by both captains.</p>
+        <div id="fixturesNotice"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="filter-bar" id="fixtureFilters" role="group" aria-label="Filter fixtures by group"></div>
+        <div id="fixturesRoot"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

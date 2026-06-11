@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Player Stats — Apex Pro League</title>
+  <meta name="description" content="Golden Boot, Playmaker, Golden Glove and MVP leaderboards for Apex Pro League Season I." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="stats">
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Individual Honours</span>
+        <h1>Player <span class="text-gold">Leaderboards</span></h1>
+        <p>The races for the Golden Boot, Golden Glove, Playmaker award and Season MVP — updated after every matchday.</p>
+        <div id="statsNotice"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats-grid" id="statsRoot"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

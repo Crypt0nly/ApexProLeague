@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knockout Bracket — Apex Pro League</title>
+  <meta name="description" content="The road to the Grand Final: quarter-finals, semi-finals and the Apex Pro League Grand Final bracket." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="bracket">
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Knockout Stage</span>
+        <h1>Road to the <span class="text-gold">Grand Final</span></h1>
+        <p>Single elimination. Golden goal extra time, then penalties. Group winners face runners-up from the opposite side of the draw.</p>
+        <div id="bracketNotice"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container--wide bracket-wrap" id="bracketRoot"></div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="discord-panel reveal">
+          <h2>Watch it <span class="text-gold">live</span></h2>
+          <p>Every knockout tie is broadcast with casters on the league Discord stage. Join the server for watch parties, predictions and post-match analysis.</p>
+          <a class="btn btn--gold" href="#" data-discord>Join the Broadcast</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

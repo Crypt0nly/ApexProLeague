@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Standings — Apex Pro League</title>
+  <meta name="description" content="Live group tables for Apex Pro League Season I — points, goal difference and form, updated every matchday." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="standings">
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Group Stage</span>
+        <h1>League <span class="text-gold">Standings</span></h1>
+        <p>Tables update automatically after every confirmed result. Tiebreakers: points, goal difference, goals scored.</p>
+        <div id="standingsNotice"></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="standings-grid" id="standingsRoot"></div>
+        <div class="legend">
+          <span><i></i> Advances to the quarter-finals</span>
+          <span>P played · W won · D drawn · L lost · GF for · GA against · GD difference · Pts points</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
